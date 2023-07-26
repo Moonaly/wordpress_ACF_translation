@@ -1,0 +1,224 @@
+[
+    {
+        "key": "group_6391816aba177",
+        "title": "Language Settings",
+        "fields": [
+            {
+                "key": "field_6391816cc1c3e",
+                "label": "Language",
+                "name": "language",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "en": "EN",
+                    "cn": "CN",
+                    "tw": "TW",
+                    "hk": "HK"
+                },
+                "default_value": "",
+                "return_format": "array",
+                "allow_null": 0,
+                "other_choice": 0,
+                "layout": "horizontal",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_639182998b2fb",
+                "label": "English Page Link",
+                "name": "english_page_link",
+                "type": "page_link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_6391816cc1c3e",
+                            "operator": "==",
+                            "value": "cn"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_6391816cc1c3e",
+                            "operator": "==",
+                            "value": "tw"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_6391816cc1c3e",
+                            "operator": "==",
+                            "value": "hk"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "page"
+                ],
+                "taxonomy": "",
+                "allow_archives": 1,
+                "multiple": 0,
+                "allow_null": 0
+            },
+            {
+                "key": "field_63918433adba9",
+                "label": "Chinese Page Link",
+                "name": "chinese_page_link",
+                "type": "page_link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_6391816cc1c3e",
+                            "operator": "==",
+                            "value": "en"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_6391816cc1c3e",
+                            "operator": "==",
+                            "value": "tw"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_6391816cc1c3e",
+                            "operator": "==",
+                            "value": "hk"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "page"
+                ],
+                "taxonomy": "",
+                "allow_archives": 1,
+                "multiple": 0,
+                "allow_null": 0
+            },
+            {
+                "key": "field_639184605e234",
+                "label": "Taiwan Page Link",
+                "name": "taiwan_page_link",
+                "type": "page_link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_6391816cc1c3e",
+                            "operator": "==",
+                            "value": "en"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_6391816cc1c3e",
+                            "operator": "==",
+                            "value": "cn"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_6391816cc1c3e",
+                            "operator": "==",
+                            "value": "hk"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "page"
+                ],
+                "taxonomy": "",
+                "allow_archives": 1,
+                "multiple": 0,
+                "allow_null": 0
+            },
+            {
+                "key": "field_639184a208a57",
+                "label": "Hongkong Page Link",
+                "name": "hongkong_page_link",
+                "type": "page_link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_6391816cc1c3e",
+                            "operator": "==",
+                            "value": "en"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_6391816cc1c3e",
+                            "operator": "==",
+                            "value": "cn"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_6391816cc1c3e",
+                            "operator": "==",
+                            "value": "tw"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "page"
+                ],
+                "taxonomy": "",
+                "allow_archives": 1,
+                "multiple": 0,
+                "allow_null": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]
